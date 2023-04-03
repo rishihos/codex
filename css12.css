@@ -1,0 +1,134 @@
+body {
+  background-image: url("https://www.pngall.com/wp-content/uploads/2016/06/Om-PNG-Picture.png");
+  background-size: 100px 100px;
+  animation-duration: 3ms;
+}
+.audio{
+  display: none;
+}
+.container {
+    perspective: 800px;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+  }
+  
+  .cube {
+    position: relative;
+    transform-style:preserve-3d;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    animation: rotate 5s infinite linear;
+  }
+  
+  .side {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #fff, 0 0 30px 15px #fff;
+  }
+  
+  .front {
+    transform: translateZ(100px);
+    background-image: url("https://wallpapercave.com/wp/wp4739512.jpg");
+    background-size: 100% 100%;
+    background-color: #ff4500;
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-image: url("https://i.pinimg.com/originals/cd/1c/07/cd1c070bf8d24cad6a96b94596e75d91.jpg");
+    background-size: 100% 100%;
+    background-color: #ff69b4;
+  }
+  
+  .top {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-image: url("https://wallpaperaccess.com/full/1573685.jpg");
+    background-size: 100% 100%;
+    background-color: #00bfff;
+  }
+  
+  .bottom {
+    transform: rotateX(90deg) translateZ(100px);
+    background-image: url("https://i.pinimg.com/originals/f5/e0/96/f5e096f3ea0938e731246e0fade8a523.jpg");
+    background-size: 100% 100%;
+    background-color: #ffff00;
+  }
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-image: url("https://images.alphacoders.com/281/281533.jpg");
+    background-size: 100% 100%;
+    background-color: #7cfc00;
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-image: url("https://th.bing.com/th/id/OIP.FLA4nKj5CKHv4lusljPN-wHaJ4?pid=ImgDet&rs=1");
+    background-size: 100% 100%;
+    background-color: #1e90ff;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  .container { 
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .glowing-button{
+    padding: 2px 4px;
+    border: 3px; 
+    font-weight: 700; 
+    text-decoration: none;
+    letter-spacing: 2px; 
+    color: black; 
+    font-size: 16px; 
+    }
+    .glowing-button:hover{
+    animation: glow 1500ms infinite; 
+    }
+    @keyframes glow {
+    0% { background-color: #2519cc; box-shadow: 0 0 3px #0ad2e0; }
+    50% { background-color: #51ff00; box-shadow: 0 0 40px #e6e204; }
+    100% { background-color: #da0a8a; box-shadow: 0 0 3px #0a9fda; }
+    }
+    .dark-mode{
+      animation: glow 1500ms infinite; 
+      }
+      @keyframes dark-mode {
+      0% { background-color: #2519cc; box-shadow: 0 0 3px #0ad2e0; }
+      50% { background-color: #51ff00; box-shadow: 0 0 40px #e6e204; }
+      100% { background-color: #da0a8a; box-shadow: 0 0 3px #0a9fda; }
+      }
